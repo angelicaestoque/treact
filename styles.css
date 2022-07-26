@@ -17,6 +17,13 @@
     color:  rgb(99, 37, 223);
 }
 
+.title__color {
+    color: rgb(42, 53, 80)
+}
+
+p {
+    color: lightslategray;
+}
 nav {
     height: 70px;
     display: flex;
@@ -211,8 +218,7 @@ FEATURES
 text-align: center;
     font-weight: 900;
     font-size: 50px;
-    padding-top: 20px;
-    color: rgb(42, 53, 80);
+    padding-top: 20px; 
 }
 
 .features__para--container {
@@ -226,7 +232,7 @@ text-align: center;
     font-weight: 500;
     line-height: 1.625;
     margin-top: 16px;
-    opacity: 0.45;
+    
 }
 
 .features__spacer {
@@ -236,6 +242,52 @@ text-align: center;
 .services {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
 }
 
+.service {
+    display: flex;
+    width: calc(100%/4);
+    margin: 0 16px 0 16px;
+    padding: 32px 8px ;
+}
 
+.img__container {
+border-radius: 9999px;
+border: solid 1px;
+color: rgba(0, 0, 0, 0.192);
+flex-shrink: 0;
+padding: 1rem;
+display: flex;
+height: 60px;
+
+}
+
+.features__img {
+    width: 100%;
+    max-width: 24px;
+}
+
+.service__description {
+    display: flex;
+    flex-direction: column;
+    margin: 8px 0 0 16px;
+}
+
+.service__title {
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    font-size: 1.5rem;
+    line-height: 1;
+    color: rgb(42, 53, 80);
+}
+
+.service__para {
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 0.25rem;
+    line-height: 2;
+    margin-top: 16px;
+}
