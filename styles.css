@@ -84,10 +84,16 @@ a {
   font-weight: 600;
   text-decoration: none;
 }
+
+i {
+  color: black;
+  font-size: 24px;
+}
+
 .btn {
   background-color: rgb(99, 37, 223);
   color: white;
-  padding: 12px 32px 12px 32px;
+  padding: 12px;
   border: none;
   font-weight: 700;
   font-size: 100%;
@@ -611,6 +617,7 @@ margin-bottom: -2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 96px;
 }
 
 .footer_logo-wrapper {
@@ -634,10 +641,32 @@ margin-bottom: -2rem;
     font-weight: 500;
     color: #fff;
     letter-spacing: 00.025em;
+    margin-left: -12em;
 }
 
-.footer__socials {
-color: #fff;
-}    
+.footer_social {
+  margin-right: 12px;  
+  
+}
 
+.circle-border {  
+  border-radius: 50%;    
+  background-color: white;
+  padding: 6px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.fa-facebook-f {
+  padding: 0 4px;
+}
+
+/* SMALL PHONES, TABLETS, LARGE PHONES */
+
+@media (max-width: 728px){
+  .row{
+    flex-direction: column;
+  }
+}
