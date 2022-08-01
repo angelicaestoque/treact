@@ -385,9 +385,16 @@ STEPS
 .step__container {
   display: flex;
   margin-top: 32px;
+ 
 }
 
 /* .step__number_container { */
+
+  .step_img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 48px;
+  }
 
 .step__description_container {
   display: flex;
@@ -397,6 +404,8 @@ STEPS
 }
 
 .step__number_container {
+  display: flex;
+  margin-top: 12px;
   font-weight: 600;
   font-size: 2.25rem;
   line-height: 1;
@@ -449,8 +458,9 @@ PRICING
     margin: 64px 32px 0 0;
     padding: 8px 32px 0 32px;
     flex: 1 1 0;
-    border: solid #ddd;
+    border: solid #ddd 1px;
     border-radius: 12px;
+    position: relative;
 }
 
 /* ul {
@@ -464,6 +474,23 @@ li {
 }
 
 */
+.plan-border {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 0.5rem;
+}
+.plan-border-1 {
+  background:linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+
+.plan-border-3 {
+  background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+
+}
 .plan__header {
   padding: 32px 0;
   display: flex;
@@ -487,6 +514,9 @@ li {
   color: rgb(138, 139, 152);
 }
 
+.monthly-2 {
+  color: #fff;
+}
 .feature-for {
   font-size: 1.25em;
   font-weight: 700;
@@ -497,10 +527,11 @@ li {
   margin: 0 -32px;
   border: 2px 0;
   padding: 32px;
-  border-top-width: 2px;
-  border-bottom-width: 2px;
+  border-top-width: 1.5px;
+  border-bottom-width: 1.5px;
   border-top: solid #ddd;
   border-bottom: solid #ddd;
+  line-height: 3em;
 }
 
 .btn-plan {
@@ -518,6 +549,7 @@ li {
 .plan-2 {
     background: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
     color: #fff;
+    border: none;
 }
 
 .plan__features-2 {
